@@ -13,8 +13,6 @@
 body {
   background: #1e1e1e;
   color: #171717;
-  padding-top: 20px;
-
 }
 
 .container{
@@ -91,4 +89,13 @@ input::placeholder {
 }
 .info p:nth-child(1){
   margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .weather_app {
+    width: 300px !important;
+  }
+  input{
+    width: 230px !important;
+  }
 }
