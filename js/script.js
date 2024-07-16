@@ -36,7 +36,7 @@ const getWeatherData = async () => {
     
     const {name,sys,dt,timezone,weather,main,wind}=data
     if(!name){
-      return showToast("not found")
+      return showToast("City Not Found")
     }
     
     cityName.innerHTML = `${name}, ${getCountryName(sys.country)}`
@@ -51,8 +51,7 @@ const getWeatherData = async () => {
     w_wind.innerHTML=`${wind.speed} m/s`
     w_pressure.innerHTML=`${main.pressure} hPa`
   } catch(error){
-    showToast("Error In The House")
-  }
+    showToast("Oops! Something went wrong. Please try again later.");  }
   
   
 }

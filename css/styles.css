@@ -13,6 +13,8 @@
 body {
   background: #1e1e1e;
   color: #171717;
+  padding-top: 20px;
+
 }
 
 .container{
@@ -22,7 +24,7 @@ body {
 .weather_app{
   width: 500px !important;
   border-radius: 20px;
-  padding:30px !important;
+  padding:30px 45px 30px 30px !important;
 }
 input {
   border: none;
@@ -72,12 +74,14 @@ input::placeholder {
   font-size: 13px;
   display: flex;
   align-items: center;
+  height: 60px;
+  padding-top:1rem !important;
   background: #1e1e1e;
   background-color: #f7f7f7;
   color: #000;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding-bottom: -10px !important;
+  margin-right: -15px !important ;
 }
 
 .weather_card >i{
