@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* p{
+  font-size: 15px;
+} */
+
+body {
+  background: #1e1e1e;
+  color: #171717;
+}
+
+.container{
+  height: 100vh;
+}
+
+.weather_app{
+  width: 500px !important;
+  border-radius: 20px;
+  padding:30px !important;
+}
+input {
+  border: none;
+  background: #1e1e1e;
+  padding: 4.5px 35px;
+
+  color: #fff;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+input::placeholder {
+  color: #f7f7f7;
+  font-size: 15px;
+}
+.fa-magnifying-glass{
+  font-size: 15px;
+
+  top: 9px;
+  left: 8px;
+}
+.weather_forecast {
+  display: inline-block;
+  background: #1e1e1e;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+
+}
+.weather_icon img {
+  margin: -30px 0 -10px 0;
+  width: 130px;
+  display: block;
+  filter: drop-shadow(2px 4px 6px black);
+  -webkit-filter: drop-shadow(2px 4px 6px black);
+}
+.temp{
+  margin: -4px 0 -1px 0;
+  font-size: 20px;
+}
+
+.min_max__temp p {
+  font-size: 14px;
+  margin: 0.5rem;
+}
+.weather_card{
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  background-color: #f7f7f7;
+  color: #000;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding-bottom: -10px !important;
+}
+
+.weather_card >i{
+  margin-top: -12px !important;
+  margin-right: 12px;
+  font-size: 18px !important;
+}
+.info p:nth-child(1){
+  margin-bottom: 0px;
+}

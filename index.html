@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <div class="container d-flex justify-content-center align-items-center">
+      <div class="weather_app bg-white border p-3">
+        <div class="weather_app__search">
+          <form onsubmit="getUserInput()" class="position-relative">
+            <i
+              class="fa-solid fa-magnifying-glass position-absolute"
+              style="color: white"
+            ></i>
+            <input
+              type="text"
+              class="weather_app__search__input"
+              placeholder="Enter city name"
+            />
+          </form>
+        </div>
+
+        <div class="weather_app__result d-flex flex-column justify-content-center my-4 ">
+          <h2 class="city_name text-center">Narowal, Pakistan</h2>
+          <p class="date_time text-center">
+            Friday, February 23,2024 at 10.29 AM
+          </p>
+          <div class="">
+            <div class="d-flex justify-content-center">
+              <p class="weather_forecast">Clear</p>
+            </div>
+            <div class="weather_icon d-flex justify-content-center"></div>
+          </div>
+          <div>
+            <p class="temp text-center">25&deg;C</p>
+            <div class="min_max__temp text-center">
+              <p class="min_temp d-inline-block me-4">25&deg;C</p>
+              <p class="max_temp d-inline-block">25&deg;C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="weather_app__details">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="weather_card ps-3 pt-2 mb-2 d-flex">
+                <i class="fa-solid fa-temperature-half"></i>
+                <div class="info">
+                  <p>Feels Like</p>
+                  <p class="weather_feels"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="weather_card ps-3 pt-2 mb-2 d-flex">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="info">
+                  <p>Humidity</p>
+                  <p class="weather_humidity"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="weather_card ps-3 pt-2 mb-2 d-flex">
+                <i class="fa-solid fa-wind"></i>
+                <div class="info">
+                  <p>Wind</p>
+                  <p class="weather_wind"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="weather_card ps-3 pt-2 mb-2 d-flex">
+                <i class="fa-solid fa-gauge-high"></i>
+                <div class="info">
+                  <p>Pressure</p>
+                  <p class="weather_pressure"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
