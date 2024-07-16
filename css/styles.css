@@ -93,7 +93,7 @@ input::placeholder {
 
 @media screen and (max-width: 768px) {
   .weather_app {
-    width: 300px !important;
+    width: 340px !important;
   }
   input{
     width: 230px !important;
